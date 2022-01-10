@@ -30,3 +30,21 @@ Päiväkirjan palauttamalla saa arvosanan. Palautuspäivät mainittu yllä. Myö
 #### Harjoitustehtävät
 
 max. 15 pistettä - harjoitustehtäviä 20 ( tai alle)
+
+
+
+#### Laaja harjoitustyö
+
+Pisteitä max. 15(+ bonus pisteet)  
+Tavoitteena toteuttaa oman idean pohjalta sovellus mobiililaitteeseen  
+
+Vaatimukset:  
+Idean dokumentointi - A4-kokoinen esite omasta sovelluksesta (corona rajoituksista johtuen riittää 1 sivun sovellusesittely päiväkirjassa)  
+Käyttöohje kuvilla (helpottaa testausta kurssin arvioinnin yhteydessä)  
+Sovelluksen rakenteen toiminnallinen kuvaus aktiviteetti- tai sekvenssikaaviolla ja Sovelluksen runko käyttöliittymällä toimivana sovelluksena.  
+Sovelluksen dokumentointi koodissa (mitä funktiot/metodi tekevät?)  
+Perusominaisuudet: tietokanta, oikeuden pyytäminen, sensorit, kuvat, paikannus, ...  
+Vaativat ominaisuudet: kamera, kartta, kirjautuminen, tietokanta-pilvessä, ulkoiset APIt, laitteen anturit, voice to text, text to voice ML-kirjasto, ...  
+bonus pisteitä: - Sovelluksen julkaisu sovelluskaupassa  
+Jos tavoitteena on arvosana ennen kesää 2022 niin työskentely kannattaa aloittaa harjoitustehtävistä heti(kun harjoitukset ovat saatavilla).  
+Opinnäytetyöpohja  
