@@ -2,7 +2,7 @@
 
 
 Date: 21.Jan.2022    
-Android studio version 4.3.1  
+Android studio version 4.2.1  
 Virtual machine: Nexus 6p API 28  
 Deep Learning tool: pytorch  
 
