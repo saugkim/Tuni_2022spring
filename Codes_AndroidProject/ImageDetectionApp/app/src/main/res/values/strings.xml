@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Image Detection</string>
+    <string name="application_id">org.tuni.torchmodel</string>
+    <string name="image_name">default_image.jpg</string>
+    <string name="model_name">mobilenet_scripted.pt</string>
+    <string name="button_gallery">SELECT PHOTO FROM DEVICE</string>
+    <string name="class_name">SHOW RESULT</string>
+    <string name="image_content">selected image</string>
+    <string name="button_detection">Run Object Detection</string>
+    <string name="button_segmentation">Run Image Segmentation</string>
+    <string name="image_description">Segmented image</string>
+    <string name="save_image">SAVE IMAGE</string>
+
+</resources>
