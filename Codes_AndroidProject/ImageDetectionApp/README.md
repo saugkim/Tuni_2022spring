@@ -11,15 +11,18 @@ for android API 28 and below, app need `External Storage` permission to save seg
 
 app main view  
 <img src="id1.PNG" width=300/>
+<p><b> 
+  After run object detection &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp After run image segmentation
+<b></p>
+<p float="left">
+  <img src="id2.PNG" width=250 /> &nbsp&nbsp <img src="id3.PNG" width=250 />
+</p>
 
-<br>
-after run object detection    
-<img src="id2.PNG" width=250 />
-
-<br>
-after run image segmentation  
-<img src="id3.PNG" width=250 />
-
+<!--
+ run object detection            |  run image segmentation
+:-------------------------:|:-------------------------:
+![](id2.PNG)  |  ![](id3.PNG)
+-->
 <br>
 
 ref. the app is created based on the pytorch android tutorial  
