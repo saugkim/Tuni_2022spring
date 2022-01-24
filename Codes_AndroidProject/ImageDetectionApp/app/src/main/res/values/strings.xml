@@ -10,5 +10,5 @@
     <string name="button_segmentation">Run Image Segmentation</string>
     <string name="image_description">Segmented image</string>
     <string name="save_image">SAVE IMAGE</string>
-
+    <string name="menu_name">INFO</string>
 </resources>

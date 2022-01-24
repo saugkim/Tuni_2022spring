@@ -36,7 +36,7 @@ public class DeepLabV3Classes {
         0xFF008080,
         0xFF808080,
         0xFF400000,
-        0xFF408000,
+        0xFFC00000,
         0xFF408000,
         0xFFC08000,
         0xFF400080,
