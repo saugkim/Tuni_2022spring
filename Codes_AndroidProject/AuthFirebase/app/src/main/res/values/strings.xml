@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">authprebuilt</string>
+    <string name="hello">Hello</string>
+    <string name="sign_out">SIGN OUT</string>
+</resources>
