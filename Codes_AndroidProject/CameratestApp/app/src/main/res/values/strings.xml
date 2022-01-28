@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">cameratest</string>
+    <string name="btnFromGallery">SELECT PHOTO</string>
+    <string name="btnFromCamera">TAKE PHOTO</string>
+    <string name="show_image_here">IMAGE DISPLAY</string>
+    <string name="hint">output</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
