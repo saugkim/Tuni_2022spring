@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RoomTest</string>
+    <string name="add_a_user">ADD A USER</string>
+    <string name="firstnamehint">firstname</string>
+    <string name="lastnamehint">lastname</string>
+    <string name="save">SAVE</string>
+    <string name="delete">DELETE</string>
+    <string name="update">UPDATE</string>
+    <string name="update_user">UPDATE USER</string>
+    <string name="add_user">add user</string>
+</resources>
