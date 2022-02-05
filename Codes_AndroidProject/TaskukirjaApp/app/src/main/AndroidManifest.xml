@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.tuni.taskukirja">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_baseline_launch_24"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.taskukirja"
+        tools:ignore="AllowBackup">
+        <activity android:name="org.tuni.taskukirja.UpdateBookActivity"
+            android:label="@string/update_book"/>
+        <activity android:name="org.tuni.taskukirja.AddBookActivity"
+            android:label="@string/add_a_new_book"/>
+        <activity
+            android:name="org.tuni.taskukirja.MainActivity"
+            android:label="@string/show_collections"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

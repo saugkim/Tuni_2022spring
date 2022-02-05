@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TaskukirjaApp</string>
+    <string name="show_collections">Collections of Aku Ankka taskukirja</string>
+    <string name="add_a_new_book">Add a new Aku Ankka taskukirja</string>
+    <string name="update_book">Manage Library</string>
+
+    <string name="title_hint">title of the book</string>
+    <string name="issue_hint">number of issue of the book</string>
+    <string name="publish_year_hint">publish year of the book</string>
+    <string name="pages_hint">number of pages of the book</string>
+    <string name="purchase_date_hint">purchase date of the book</string>
+
+    <string name="save">ADD</string>
+    <string name="delete">DELETE</string>
+    <string name="update">UPDATE</string>
+    <string name="search">SEARCH by TITLE</string>
+    <string name="show_all">SHOW ALL BOOKS</string>
+
+    <string name="add_book">Add Book</string>
+    <string name="search_hint">title keyword search, empty=search all</string>
+    <string name="remove_all">remove all</string>
+
+</resources>
