@@ -521,20 +521,7 @@
 "urlToImage": "https://image.cnbcfm.com/api/v1/image/1070116921644023049105Calendly_CEO_and_Founder_Tope_Awotona_2.jpeg?v=1644278655",
 "publishedAt": "20220207T22:21:44Z",
 "content": "It's been a wild few weeks in tech, from Microsoft's recordsetting $69 billion agreement to buy Activision Blizzard to a frenzied stretch of earnings reports that saw Netflix and Facebook in panics… [+6004 chars]"
-}
-]
-}
-
-arrow_back
-Top headlines from TechCrunch right now
-
-arrow_forward
-GET
-https://newsapi.org/v2/topheadlines?sources=techcrunch&apiKey=5a4526b34304442184108845828cc437
-{
-"status": "ok",
-"totalResults": 10,
-"articles": [
+},
 {
 "source": {
 "id": "techcrunch",
@@ -664,18 +651,7 @@ https://newsapi.org/v2/topheadlines?sources=techcrunch&apiKey=5a4526b34304442184
 "urlToImage": "https://techcrunch.com/wpcontent/uploads/2022/02/5613045206_1988249b3f_k.jpg?w=533",
 "publishedAt": "20220208T00:00:56Z",
 "content": "For many of us, our home is by far our biggest asset, and in the world of fintech, that’s led to a logical extension: when you need money, borrow against that biggest asset. Today, a London fintech c… [+5557 chars]"
-}
-]
-}
-
-arrow_back
-All articles published by the Wall Street Journal in the last 6 months, sorted by recent first
-GET
-https://newsapi.org/v2/everything?domains=wsj.com&apiKey=5a4526b34304442184108845828cc437
-{
-"status": "ok",
-"totalResults": 649,
-"articles": [
+},
 {
 "source": {
 "id": "thewallstreetjournal",
