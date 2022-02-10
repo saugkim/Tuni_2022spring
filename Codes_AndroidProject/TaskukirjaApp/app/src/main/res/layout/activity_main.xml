@@ -19,6 +19,7 @@
         android:layout_height="0dp"
         android:padding="10dp"
         tools:listitem="@layout/recyclerview_book"
+        android:background="#ECEFF1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:contentDescription="@string/add_book"
-        app:backgroundTint="#CDDC39"
+        app:backgroundTint="#E6F17C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_baseline_library_add_24" />
@@ -41,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:contentDescription="@string/remove_all"
-        app:backgroundTint="#CDDC39"
+        app:backgroundTint="#E6F17C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_baseline_delete_forever_24" />

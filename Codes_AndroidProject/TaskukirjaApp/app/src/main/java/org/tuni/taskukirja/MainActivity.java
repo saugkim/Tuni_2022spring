@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonRemoveAllBooks.setOnClickListener(view -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("All records in Database will be deleted permanently, are you sure?");
+            builder.setTitle("All books in Database will be deleted permanently, are you sure?");
             builder.setPositiveButton("Yes", (dialogInterface, i) -> removeAll());
             builder.setNegativeButton("No", (dialogInterface, i) -> Toast.makeText(getApplicationContext(), "cancelled", Toast.LENGTH_LONG).show());
             AlertDialog ad = builder.create();
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        query = TextUtils.isEmpty(editTextSearch.getText()) ? EMPTY_QUERY : "%"+ editTextSearch.getText().toString() +"%";
+        //query = TextUtils.isEmpty(editTextSearch.getText()) ? EMPTY_QUERY : "%"+ editTextSearch.getText().toString() +"%";
     }
     void removeAll(){
         bookViewModel.removeAll();

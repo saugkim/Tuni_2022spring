@@ -19,5 +19,6 @@
     <string name="add_book">Add Book</string>
     <string name="search_hint">title keyword search, empty=search all</string>
     <string name="remove_all">remove all</string>
+    <string name="remove">X</string>
 
 </resources>

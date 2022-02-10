@@ -1,13 +1,19 @@
 package org.tuni.taskukirja;
 
+import android.app.AlertDialog;
+import android.app.Application;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 
 public class BookAdapter extends ListAdapter<Book, BookViewHolder> {
 
+    BookRepository bookRepository;
     public BookAdapter(@NonNull DiffUtil.ItemCallback<Book> diffCallback) {
         super(diffCallback);
     }
