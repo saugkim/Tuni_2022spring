@@ -19,7 +19,8 @@ import java.util.Locale;
 
 public class AddBookActivity extends AppCompatActivity {
 
-    public static final String TAG = "ZZ AddBookActivity: ";
+    public static final String TAG = "ZZ AddBookActivity:";
+    public static final String EXTRA_REPLY = "org.tuni.taskukirja.REPLY";
     public static String DATE_FORMAT = "dd.MM.yyyy";
 
     EditText editTextIssue, editTextTitle, editTextYear, editTextPages, editTextDate;
@@ -63,10 +64,47 @@ public class AddBookActivity extends AppCompatActivity {
         });
 
         buttonSave = findViewById(R.id.button_save);
-        buttonSave.setOnClickListener(view -> save());
+        buttonSave.setOnClickListener(view -> reply());
     }
 
-    void save() {
+    void reply() {
+        Intent replyIntent = new Intent();
+        if (TextUtils.isEmpty(editTextTitle.getText())) {
+            editTextTitle.setError("title required");
+            editTextTitle.requestFocus();
+            Toast.makeText(getApplicationContext(), "Not saved", Toast.LENGTH_LONG).show();
+            Log.d(TAG, "Not saved - empty title inputs");
+            return;
+        }
+        if (TextUtils.isEmpty(editTextIssue.getText())) {
+            editTextIssue.setError("number of issue required");
+            editTextIssue.requestFocus();
+            Log.d(TAG, "Not saved - empty issue input");
+            return;
+        }
+
+        int issue = Integer.parseInt(editTextIssue.getText().toString());
+        String title = editTextTitle.getText().toString();
+        Log.d(TAG, "date selected ? " + date_selected);
+        String date = date_selected ? editTextDate.getText().toString() : getToday();
+        String year = TextUtils.isEmpty(editTextYear.getText()) ? null : editTextYear.getText().toString();
+        String pages = TextUtils.isEmpty(editTextPages.getText()) ? null : editTextPages.getText().toString();
+
+        date_selected = false;
+        Book book = new Book(issue, title, year, pages, date);
+
+        replyIntent.putExtra(EXTRA_REPLY, book);
+        setResult(RESULT_OK, replyIntent);
+
+        finish();
+    }
+
+    public String getToday() {
+        Date today = new Date();
+        return new SimpleDateFormat(DATE_FORMAT, Locale.getDefault()).format(today);
+    }
+
+    void addNewBook() {
         Intent goToMainIntent = new Intent(this, MainActivity.class);
 
         if (TextUtils.isEmpty(editTextTitle.getText())) {
@@ -96,10 +134,5 @@ public class AddBookActivity extends AppCompatActivity {
         startActivity(goToMainIntent);
 
         finish();
-    }
-
-    public String getToday() {
-        Date today = new Date();
-        return new SimpleDateFormat(DATE_FORMAT, Locale.getDefault()).format(today);
     }
 }

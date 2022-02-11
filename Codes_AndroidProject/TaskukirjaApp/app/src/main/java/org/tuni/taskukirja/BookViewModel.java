@@ -52,6 +52,9 @@ public class BookViewModel extends AndroidViewModel {
         bookRepository.deleteAll();
     }
 
+    public long insert(Book book) {
+        return bookRepository.insert(book);
+    }
     public void remove(Book book) {
         bookRepository.delete(book);
     }
