@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 bookViewModel.setQuery(query);
                 bookViewModel.getObservableBooks().observe(this, adapter::submitList);
                 Log.d(TAG, "search input: " + query);
-                Snackbar.make(view, "title search query: " + query, Snackbar.LENGTH_LONG).show();
+                Snackbar.make(view, "title search input: " + editTextSearch.getText().toString(), Snackbar.LENGTH_LONG).show();
             } else {
                 bookViewModel.setQuery(EMPTY_QUERY);
                 bookViewModel.getObservableBooks().observe(this, adapter::submitList);
@@ -121,6 +121,8 @@ public class MainActivity extends AppCompatActivity {
     void removeAll(){
         bookViewModel.removeAll();
         Toast.makeText(getApplicationContext(), "database are empty now", Toast.LENGTH_LONG).show();
+
+        AddSampleBooks.addSamples(bookViewModel);
     }
     public void openAddBookActivityForResult() {
         Intent intent = new Intent(this, AddBookActivity.class);

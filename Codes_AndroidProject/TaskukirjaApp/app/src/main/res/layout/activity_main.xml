@@ -30,6 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        app:maxImageSize="36dp"
         android:contentDescription="@string/add_book"
         app:backgroundTint="#E6F17C"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,6 +44,7 @@
         android:layout_margin="16dp"
         android:contentDescription="@string/remove_all"
         app:backgroundTint="#E6F17C"
+        app:maxImageSize="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_baseline_delete_forever_24" />
@@ -51,13 +53,21 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
         app:layout_constraintBottom_toBottomOf="@+id/screenGuideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonShowALl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_all"
+            android:layout_marginBottom="2dp"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/editTextSearch"
@@ -75,13 +85,7 @@
             android:layout_height="wrap_content"
             android:text="@string/search"
             android:textSize="16sp" />
-        <Button
-            android:id="@+id/buttonShowALl"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/show_all"
-            android:layout_marginTop="5dp"
-            android:textSize="16sp" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
