@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         buttonShowALl.setOnClickListener(view->{
+            editTextSearch.setText(null);
             bookViewModel.setQuery(EMPTY_QUERY);
             bookViewModel.getObservableBooks().observe(this, adapter::submitList);
         });

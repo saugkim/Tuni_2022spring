@@ -15,6 +15,7 @@ public class AddSampleBooks {
         Book book8 = new Book(8, "Aku ja Amerikan keisari", "1971", "256", "13.2.2022");
         Book book9 = new Book(9,"Ota rennosti, Aku","1972","256", "13.2.2022");
         Book book10 = new Book(10, "Roope näkee punaista", "1972","256", "13.2.2022");
+        Book book401 = new Book(401, "Tuplanolla ja uhka taivaalta", "2013", "512", "14.2.2022");
 
         model.insert(book1);
         model.insert(book2);
@@ -26,5 +27,6 @@ public class AddSampleBooks {
         model.insert(book8);
         model.insert(book9);
         model.insert(book10);
+        model.insert(book401);
     }
 }

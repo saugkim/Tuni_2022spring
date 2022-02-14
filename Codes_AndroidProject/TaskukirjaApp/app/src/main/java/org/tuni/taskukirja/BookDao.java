@@ -15,7 +15,7 @@ public interface BookDao {
     @Query("SELECT * FROM library ORDER BY issue")
     LiveData<List<Book>> getAllBooks();
 
-    @Query("SELECT * FROM library WHERE title LIKE :search")
+    @Query("SELECT * FROM library WHERE title LIKE :search ORDER BY issue")
     LiveData<List<Book>> getBooksByTitle(String search);
 
     @Query("DELETE FROM library")
