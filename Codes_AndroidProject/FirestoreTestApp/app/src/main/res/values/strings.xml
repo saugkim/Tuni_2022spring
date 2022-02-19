@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FirestoreTestApp</string>
+    <string name="add_new">Add New</string>
+    <string name="delete_all">Delete All</string>
+    <string name="sivujen_maara">Sivumäärä</string>
+    <string name="julkiasu_vuosi">Julkaisuvuosi</string>
+    <string name="name">Kirjan nimi</string>
+    <string name="numero">Kirjan numero</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+</resources>
