@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="news_title">news title</string>
+    <string name="news_description">news description</string>
+    <string name="news_published_at">news published at</string>
+    <string name="news_photo">news photo</string>
+</resources>
