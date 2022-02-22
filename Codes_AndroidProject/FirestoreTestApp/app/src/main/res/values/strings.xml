@@ -8,4 +8,10 @@
     <string name="numero">Kirjan numero</string>
     <string name="update">UPDATE</string>
     <string name="delete">DELETE</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="sign_in_cancelled">Sign in cancelled</string>
+    <string name="already_signed_in">Already signed in</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="delete_account">REMOVE ME</string>
 </resources>

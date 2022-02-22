@@ -9,18 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirestoreTestApp">
+
         <activity
-            android:name=".UpdateAkuActivity"
-            android:label="UPDATE VIEW"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:label="APP MAIN VIEW"
-            android:exported="true">
+            android:name=".AuthenticationActivity"
+            android:label="Auth"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UpdateAkuActivity"
+            android:exported="false"
+            android:label="UPDATE VIEW" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="APP MAIN VIEW">
         </activity>
     </application>
 
