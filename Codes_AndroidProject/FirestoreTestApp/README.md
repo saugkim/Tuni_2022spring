@@ -1,15 +1,16 @@
-date: 19.Feb.2022  
+date: 22.Feb.2022  
 part of school works  
 
-Project name: FirestoreTestApp (Taskukirja using Firebase firestore database) 
+Project name: FirestoreTestApp (Taskukirja using Firebase) 
 
 Tools:  
-  - Android Studio Bumblebee  
-    version 2021.1.1  
+  - Android Studio Bumblebee version 2021.1.1  
   - Android Gradle plugin 7.1.0
+  - Firebase Firestore
+  - Firebase Authentication
 
 
-Tag: Java, Firestore, ListView
+Tag: Java, Firestore, Authentication, ListView
 
 query: select all, add, update, delete all, delete one
 activities: main view, update view (2)  
@@ -24,3 +25,10 @@ activities: main view, update view (2)
 <br>  
 
 <img src="Screenshot_20220219_mainview.png" width=250 /> <img src="Screenshot_20220219_updateview.png" width=250 >
+
+<br>
+
+**After implementation of Authentication**  
+<br />
+<img src="Screenshot_20220222_140935.png" width=250 /> <img src="Screenshot_20220222_140905.png" width=250 />
+
