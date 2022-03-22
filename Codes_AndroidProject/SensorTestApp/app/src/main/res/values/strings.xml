@@ -1,19 +1,22 @@
 <resources>
     <string name="app_name">SensorTestApp</string>
     <string name="error_no_sensor">No sensor</string>
+
     <string name="label_light">Illuminance: %1$.2f</string>
     <string name="label_humidity">Relative Humidity: %1$.1f</string>
+    <string name="label_proximity">Proximity: %1$.1f</string>
     <string name="label_temp">Air temperature: %1$.1f</string>
     <string name="label_pressure">Air pressure: %1$.0f</string>
-
-    <string name="label_proximity">Light Sensor: %1$.2f</string>
     <string name="label_others">%1$s : %2$.2f %3$s</string>
+
     <string name="main_label">Sensors in My Device</string>
     <string name="light_label">Light sensor</string>
+    <string name="proximity_label">Proximity sensor</string>
     <string name="humidity_label">Humidity sensor</string>
     <string name="temperature_label">Ambient Temperature sensor</string>
     <string name="pressure_label">Air Pressure sensor</string>
     <string name="orientation_label">Device Orientation</string>
+
     <string name="type">Type</string>
     <string name="unit">Unit</string>
     <string name="description">Description and Uses</string>

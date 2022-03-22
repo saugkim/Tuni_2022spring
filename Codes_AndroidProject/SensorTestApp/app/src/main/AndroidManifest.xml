@@ -10,36 +10,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SensorTestApp">
         <activity
-            android:name=".OrientationActivity"
-            android:label="Device Orientation"
+            android:name=".ProximityActivity"
+            android:label="@string/proximity_label"
             android:exported="false" />
+        <activity
+            android:name=".OrientationActivity"
+            android:exported="false"
+            android:label="@string/orientation_label" />
         <activity
             android:name=".PressureActivity"
-            android:label="Air Pressure"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/pressure_label" />
         <activity
             android:name=".HumidityActivity"
-            android:label="Relative Humidity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/humidity_label" />
         <activity
             android:name=".TemperatureActivity"
-            android:label="Ambient Temperature"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/temperature_label" />
         <activity
             android:name=".LightActivity"
             android:exported="false"
             android:label="@string/light_label" />
         <activity
             android:name=".OthersActivity"
-            android:label="Sensors"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Sensors" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/main_label">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -48,6 +48,9 @@ public class SensorAdapter extends RecyclerView.Adapter<SensorAdapter.SensorView
             case (Sensor.TYPE_LIGHT):
                 intent = new Intent(view.getContext(), LightActivity.class);
                 break;
+            case (Sensor.TYPE_PROXIMITY):
+                intent = new Intent(view.getContext(), ProximityActivity.class);
+                break;
             case (Sensor.TYPE_AMBIENT_TEMPERATURE):
                 intent = new Intent(view.getContext(), TemperatureActivity.class);
                 break;
@@ -56,9 +59,6 @@ public class SensorAdapter extends RecyclerView.Adapter<SensorAdapter.SensorView
                 break;
             case (Sensor.TYPE_RELATIVE_HUMIDITY):
                 intent = new Intent(view.getContext(), HumidityActivity.class);
-                break;
-            case (Sensor.TYPE_ORIENTATION):
-                intent = new Intent(view.getContext(), OrientationActivity.class);
                 break;
             default:
                 intent = new Intent(view.getContext(), OthersActivity.class);
