@@ -1,0 +1,1 @@
+https://developer.android.com/codelabs/advanced-android-training-sensor-orientation?index=..%2F..advanced-android-training#7
