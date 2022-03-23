@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CameraProject</string>
+    <string name="capture">Capture</string>
+    <string name="preview_area">Preview Area</string>
+    <string name="show_saved_photos">SHOW SAVED PHOTOS</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="desc">Saved Image</string>
+</resources>
