@@ -2,16 +2,13 @@ package org.tuni.cameraproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
-import android.widget.GridLayout;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -33,7 +30,6 @@ public class ImagelistActivity extends AppCompatActivity {
         File[] files = listValidFiles(new File(Environment.getExternalStorageDirectory().toString() + "/images"));
         Log.d(TAG, "number of files " + files.length);
         fileList = Arrays.asList(files);
-        Log.d(TAG,"fileList " + fileList.get(12).getName());
 
         adapter = new ImageAdapter(fileList);
         recyclerView.setAdapter(adapter);

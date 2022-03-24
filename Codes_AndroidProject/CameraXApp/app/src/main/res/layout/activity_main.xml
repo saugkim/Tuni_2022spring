@@ -40,19 +40,19 @@
         app:layout_constraintTop_toBottomOf="@+id/guideline">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/takePhotoButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/take_photo" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/showPhotosButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/show_saved_photos" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/savedImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:srcCompat="@tools:sample/backgrounds/scenic"
