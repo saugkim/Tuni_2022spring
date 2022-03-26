@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LocationTestApp</string>
+    <string name="current_location">Current Location</string>
+    <string name="location">Longitude: XX  Latitude: XX </string>
+    <string name="longitude">Longitude:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="save">SAVE</string>
+    <string name="show_history">SHOW ALL</string>
+    <string name="get_location">GET LOCATION</string>
+</resources>
