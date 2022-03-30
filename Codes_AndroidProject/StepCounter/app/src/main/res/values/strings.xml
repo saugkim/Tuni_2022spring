@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">StepCounter</string>
+    <string name="statistics">Statistics</string>
+    <string name="main_title">Step Counter</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="onclickevent">onClickEvent</string>
+    <string name="check_step_sensor">AVAILABLE SENSORS</string>
+    <string name="list_of_sensors">Display available sensors</string>
+    <string name="save">save current steps</string>
+    <string name="delete">remove all saved data</string>
+    <string name="number_of_steps">Number of steps</string>
+    <string name="last_walks">Last walks taken:</string>
+    <string name="total_walks">Total walks taken:</string>
+    <string name="accumulated_steps">Device Accumulated walks:</string>
+</resources>
