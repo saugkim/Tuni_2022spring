@@ -5,17 +5,20 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import androidx.core.content.pm.PackageInfoCompat;
 
 import android.Manifest;
 import android.content.Context;
 
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -32,9 +35,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     public static String TAG = "ZZ MainActivity";
 
-    public static String REQUIRED_PERMISSION = Manifest.permission.ACTIVITY_RECOGNITION;
+    public static String REQUIRED_PERMISSION_10 = "android.permission.ACTIVITY_RECOGNITION";
+    public static String REQUIRED_PERMISSION = "com.google.android.gms.permission.ACTIVITY_RECOGNITION";
+
     ActivityResultLauncher<String> permissionLauncher =
             registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGranted -> {
+                Log.d(TAG, "launcher result " + isGranted);
                 if (isGranted) {
                     Log.d(TAG, "activity recognition permission granted");
                 } else {
@@ -126,9 +132,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
     public void checkPermission() {
-        if (ContextCompat.checkSelfPermission(this, REQUIRED_PERMISSION) !=
-                PackageManager.PERMISSION_GRANTED) {
-            permissionLauncher.launch(REQUIRED_PERMISSION);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {  //=29
+            if (ContextCompat.checkSelfPermission(this, REQUIRED_PERMISSION_10) !=
+                    PackageManager.PERMISSION_GRANTED) {
+                permissionLauncher.launch(REQUIRED_PERMISSION_10);
+            }
+        } else {
+            Log.d(TAG, "check Permission "+ Build.VERSION.SDK_INT);
+            if (ContextCompat.checkSelfPermission(this, REQUIRED_PERMISSION) !=
+                    PackageManager.PERMISSION_GRANTED) {
+                permissionLauncher.launch(REQUIRED_PERMISSION);
+            }
         }
     }
 
