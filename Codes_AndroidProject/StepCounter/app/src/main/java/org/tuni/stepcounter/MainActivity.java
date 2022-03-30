@@ -11,6 +11,7 @@ import android.content.Context;
 
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -177,6 +178,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     public void startCounting() {
         running = true;
+        vSteps.setBackgroundColor(Color.YELLOW);
         initial_step = (int)stepCounter;
         Log.d(TAG, "initial steps: " + initial_step + " final steps: " + final_step);
     }
@@ -188,6 +190,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
         final_step = (int)stepCounter;
         running = false;
+        vSteps.setBackgroundColor(Color.WHITE);
         Log.d(TAG, "final steps: " + final_step + " initial steps: " + initial_step);
     }
 
