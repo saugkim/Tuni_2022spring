@@ -24,14 +24,21 @@ Features:
   - delete saved data (FloatingActionButton) 
   - statistics: display steps taken (lastly saved, sum of all saved steps)
   - if step_counter sensor is available, then accumulated number of steps (real-time) 
-  - SharedPreference used to save data
+  - SharedPreference used to save data  
   
+<br />   
   
-Sample view
+**MainActivity test view**    
 
+<kbd>
+   <img src="20220330_org.tuni.stepcounter.jpg" width=300  />
+</kbd>
 
-
-ref:   
+  
+<br />  
+<br />
+  
+ref:     
 https://montemagno.com/part-1-my-stepcounter-android-step-sensors/  
 https://hub.packtpub.com/step-detector-and-step-counters-sensors/  
 https://programmerworld.co/android/how-to-create-walking-step-counter-app-using-accelerometer-sensor-and-shared-preference-in-android/  
