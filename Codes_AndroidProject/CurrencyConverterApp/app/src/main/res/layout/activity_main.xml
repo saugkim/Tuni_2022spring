@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFDDD"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/amount_euro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/leftRightMargin"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="@dimen/leftRightMargin"
+        android:hint="@string/hint"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#2E7D32"
+        app:layout_constraintBottom_toTopOf="@+id/convertButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"
+        app:layout_constraintBottom_toTopOf="@+id/textViewUSD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount_euro" />
+
+
+    <TextView
+        android:id="@+id/textViewUSD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/usd"
+        android:layout_marginStart="@dimen/leftRightMargin"
+        android:layout_marginEnd="@dimen/leftRightMargin"
+        android:layout_marginTop="@dimen/textViewPadding"
+        android:layout_marginBottom="@dimen/textViewPadding"
+        style="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGBP"
+        app:layout_constraintTop_toBottomOf="@+id/convertButton" />
+
+    <TextView
+        android:id="@+id/textViewGBP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gbp"
+        android:layout_marginStart="@dimen/leftRightMargin"
+        android:layout_marginEnd="@dimen/leftRightMargin"
+        android:layout_marginTop="@dimen/textViewPadding"
+        android:layout_marginBottom="@dimen/textViewPadding"
+        style="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewJPY"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUSD" />
+
+    <TextView
+        android:id="@+id/textViewJPY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jpy"
+        android:layout_marginStart="@dimen/leftRightMargin"
+        android:layout_marginEnd="@dimen/leftRightMargin"
+        android:layout_marginTop="@dimen/textViewPadding"
+        android:layout_marginBottom="@dimen/textViewPadding"
+        style="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewKRW"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGBP" />
+
+
+    <TextView
+        android:id="@+id/textViewKRW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/krw"
+        android:layout_marginStart="@dimen/leftRightMargin"
+        android:layout_marginEnd="@dimen/leftRightMargin"
+        android:layout_marginTop="@dimen/textViewPadding"
+        android:layout_marginBottom="@dimen/textViewPadding"
+        style="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCNY"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJPY" />
+
+
+    <TextView
+        android:id="@+id/textViewCNY"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/leftRightMargin"
+        android:layout_marginTop="@dimen/textViewPadding"
+        android:layout_marginEnd="@dimen/leftRightMargin"
+        android:layout_marginBottom="230dp"
+        android:text="@string/cny"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKRW" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

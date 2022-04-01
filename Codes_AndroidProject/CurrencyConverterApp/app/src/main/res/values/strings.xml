@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="convert">CONVERT</string>
+    <string name="hint">EURO AMOUNT to convert to…</string>
+    <string name="usd">USD</string>
+    <string name="gbp">GBP</string>
+    <string name="jpy">JPY</string>
+    <string name="krw">KRW</string>
+    <string name="cny">CNY</string>
+</resources>
