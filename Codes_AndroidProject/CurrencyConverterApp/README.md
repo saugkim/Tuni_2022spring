@@ -12,8 +12,8 @@ permission!
   android:permission:INTERNET  
   
 Demo views  
-<img src="H17_20220401_main.png" width=300 />
-<img src="H17_20220401_button.png" width=300 />
+<img src="H17_20220401_main.png" width=250 />
+<img src="H17_20220401_button.png" width=250 />
   
   
 volley ref:
