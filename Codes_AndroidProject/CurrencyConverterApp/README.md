@@ -4,13 +4,21 @@ Android App: Currency Converter
  
 Tools: Bumblebee 2021.1.1  
 With JAVA  
- 
-Additional library: Volley
-Currency rate source: 
 
-permission!  
-  android:permission:INTERNET  
-  
+
+Permission:  
+  - "android:permission:INTERNET"  
+    
+Dependency (Volley):   
+   - implementation 'com.android.volley:volley:1.2.1'
+
+Currency exchange rate source: 
+   - https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml  
+
+Network setting:
+  - android:usesCleartextTraffic="true"
+  - android:networkSecurityConfig="@xml/network_security_config"
+
 Demo views  
 <img src="H17_20220401_main.png" width=250 />
 <img src="H17_20220401_button.png" width=250 />
