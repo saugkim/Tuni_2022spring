@@ -5,7 +5,7 @@ Tools: Bumblebee 2021.1.1 (with JAVA)
 Library: Volley 1.2.1  
 
 
-Features:  
+Features (MainActivity):  
   -  Spinner to select region (list of city)  
   -  Button to get data from service site (opendata.fmi.fi)  
   -  TextView to display recent temperature   
@@ -14,6 +14,11 @@ Target url: place = user input & paramter = temperature(t2m)
 http://opendata.fmi.fi/wfs/fin?service=WFS&version=2.0.0&request=getFeature&storedquery_id=fmi::observations::weather::timevaluepair&place=Helsinki&parameters=t2m&
 
     
+**Demo views**  
+<img src="20220404_main.png" width=250 />
+<img src="20220404_sppiner.png" width=250 />
+<img src="20220404_result.png" width=250 />
+
 <br />    
     
 **Harjoitus 18 – Säätila nyt**   
