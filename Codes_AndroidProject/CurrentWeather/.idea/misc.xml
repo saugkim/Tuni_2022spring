@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/kim/TUNI/GitHub/Codes_AndroidProject/CurrentWeather/app/src/main/res/drawable-v21/app_widget_background.xml" value="0.1" />
         <entry key="..\:/Users/kim/TUNI/GitHub/Codes_AndroidProject/CurrentWeather/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/kim/TUNI/GitHub/Codes_AndroidProject/CurrentWeather/app/src/main/res/layout/temp_now.xml" value="0.22" />
       </map>
     </option>
   </component>
