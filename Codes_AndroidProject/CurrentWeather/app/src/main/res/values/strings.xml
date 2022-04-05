@@ -4,4 +4,10 @@
     <string name="select_location">Select location with SPINNER below</string>
     <string name="hint">Time and temperature will be displayed here</string>
     <string name="display_temperature">5 Recent Temperature</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="date_count_format">%1$d @%2$s</string>
+    <string name="last_value"> °C</string>
+    <string name="last_updated">HEL</string>
 </resources>

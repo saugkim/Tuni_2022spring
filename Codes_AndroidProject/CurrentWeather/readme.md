@@ -29,6 +29,16 @@ Ilmatieteenlaitoksen Opendata.fmi.fi – palvelun tarjoamaa tietoa.
    - https://www.ilmatieteenlaitos.fi/latauspalvelun-pikaohje
 
 
+**Harjoitus 19 – Tietoa Widgettiin**  
+Tässä tavoitteena on luoda tietoa esittävä Widget – mobiililaitteen ruudulle.
+• Esitettävä tieto voi olla valuuttakursseja tai säätieto.
+• Eli tavoitteena on hyödyntää harjoituksen 17 tai 18 datasisältöä.
+• https://developer.android.com/codelabs/advanced-android-training-widgets?index=..
+%2F..advanced-android-training#0
+• https://developer.android.com/guide/topics/appwidgets
+
+
+
 <br />
 <br />
 
