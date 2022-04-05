@@ -2,6 +2,7 @@ Date 4.4.2022
 App: CurrentWeather get recent air temperature from selected region   
 
 Tools: Bumblebee 2021.1.1 (with JAVA)   
+Test device: Android virtual device Nexux_6_API_28  
 Library: Volley 1.2.1  
 
 
@@ -20,6 +21,12 @@ http://opendata.fmi.fi/wfs/fin?service=WFS&version=2.0.0&request=getFeature&stor
 <img src="20220404_result.png" width=250 />
 
 <br />    
+
+**widget view in Homescreen**  
+current(recent) temperature in Helsinki  
+data update every `hour`  
+<img src="20220405_widget.png" width=250 /> 
+
     
 **Harjoitus 18 – Säätila nyt**   
 Ilmatieteenlaitoksen Opendata.fmi.fi – palvelun tarjoamaa tietoa.  
@@ -31,12 +38,10 @@ Ilmatieteenlaitoksen Opendata.fmi.fi – palvelun tarjoamaa tietoa.
 
 **Harjoitus 19 – Tietoa Widgettiin**  
 Tässä tavoitteena on luoda tietoa esittävä Widget – mobiililaitteen ruudulle.
-• Esitettävä tieto voi olla valuuttakursseja tai säätieto.
-• Eli tavoitteena on hyödyntää harjoituksen 17 tai 18 datasisältöä.
-• https://developer.android.com/codelabs/advanced-android-training-widgets?index=..
-%2F..advanced-android-training#0
-• https://developer.android.com/guide/topics/appwidgets
-
+   -  Esitettävä tieto voi olla valuuttakursseja tai säätieto.
+   -  Eli tavoitteena on hyödyntää harjoituksen 17 tai 18 datasisältöä.
+   -  https://developer.android.com/codelabs/advanced-android-training-widgets?index=..%2F..advanced-android-training#0
+   -  https://developer.android.com/guide/topics/appwidgets
 
 
 <br />
