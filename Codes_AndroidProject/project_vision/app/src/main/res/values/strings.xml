@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">project_vision</string>
+    <string name="select_photo">SELECT\nPHOTO</string>
+    <string name="take_photo">TAKE\nPHOTO</string>
+    <string name="run_model">IMAGE RECOGNITION</string>
+    <string name="hint">Label of the object</string>
+    <string name="feedback">feedback: is correct?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="save">SAVE</string>
+    <string name="statistics">STATISTICS</string>
+    <string name="image">image</string>
+    <string name="label_of_object">label of object</string>
+    <string name="correctness">Accuracy</string>
+    <string name="incorrect_images">Incorrectly classified object images</string>
+    <string name="ratio">correct/total</string>
+    <string name="show_true">CORRECT</string>
+    <string name="show_false">INCORRECT</string>
+    <string name="preview_area">preview area</string>
+    <string name="imagebutton">ImageButton</string>
+    <string name="captured_image">captured image here</string>
+    <string name="confirm_photo">Confirm photo</string>
+    <string name="capture">CAPTURE</string>
+</resources>
