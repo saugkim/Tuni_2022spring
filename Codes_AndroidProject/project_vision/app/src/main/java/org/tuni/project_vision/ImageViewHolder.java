@@ -17,6 +17,8 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.Locale;
+
 public class ImageViewHolder extends RecyclerView.ViewHolder {
 
     public static final String TAG = "ZZ ImageViewHolder: ";
@@ -76,7 +78,9 @@ public class ImageViewHolder extends RecyclerView.ViewHolder {
             imageView.setImageDrawable(ContextCompat.getDrawable(context, android.R.drawable.ic_menu_help));
         }
 
-        textViewLabel.setText(image.getLabel());
+        String loc = image.getLatitude() == -200 ? "\n\nLocation not available" : String.format(Locale.getDefault(), "\n\nLatitude: %.5f \nLongitude: %.5f",  image.getLatitude(), image.getLongitude());
+        String sb = image.getLabel() + loc;
+        textViewLabel.setText(sb);
     }
 
     static ImageViewHolder create(ViewGroup parent) {
